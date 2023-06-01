@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E91E63"
+    android:backgroundTint="#E91E63">
+
+    <ImageView
+        android:id="@+id/ivuser"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257"
+        app:srcCompat="@drawable/girl" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Kate"
+        app:layout_constraintBottom_toBottomOf="@+id/ivname"
+        app:layout_constraintEnd_toEndOf="@+id/tvnum"
+        app:layout_constraintStart_toEndOf="@+id/ivname"
+        app:layout_constraintTop_toTopOf="@+id/ivname" />
+
+    <ImageView
+        android:id="@+id/ivname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivuser"
+        app:layout_constraintStart_toEndOf="@+id/ivuser"
+        app:layout_constraintTop_toTopOf="@+id/ivuser"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/ivnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/ivuser"
+        app:layout_constraintTop_toBottomOf="@+id/ivname"
+        app:srcCompat="@drawable/baseline_local_phone_24" />
+
+    <TextView
+        android:id="@+id/tvnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="#ECBACB"
+        android:text="+254 710 515 773"
+        app:layout_constraintBottom_toBottomOf="@+id/ivnum"
+        app:layout_constraintEnd_toEndOf="@+id/tvemail"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toEndOf="@+id/ivnum"
+        app:layout_constraintTop_toBottomOf="@+id/tvname" />
+
+    <ImageView
+        android:id="@+id/ivemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivuser"
+        app:layout_constraintStart_toEndOf="@+id/ivuser"
+        app:layout_constraintTop_toBottomOf="@+id/ivnum"
+        app:srcCompat="@drawable/baseline_alternate_email_24" />
+
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:background="#ECBACB"
+        android:text="katekimani@gmail.com"
+        app:layout_constraintBottom_toBottomOf="@+id/ivemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toEndOf="@+id/ivemail"
+        app:layout_constraintTop_toBottomOf="@+id/tvnum"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
